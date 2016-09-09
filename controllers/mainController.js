@@ -169,8 +169,8 @@ models.Workouts.create({
 
 */
 
-models.Trainers.findAll({ include:[models.Users] }).then(function(trainers){
-  console.log(JSON.stringify(trainers))})
+// models.Trainers.findAll({ include:[models.Users] }).then(function(trainers){
+//   console.log(JSON.stringify(trainers))})
 
 
 

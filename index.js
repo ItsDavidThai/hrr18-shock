@@ -42,4 +42,6 @@ db.sequelize.sync().then(function() {
   app.listen(port, function () {
     console.log(port,' is running fine!');
   });
+}).catch(function(err){
+  console.log(err)
 });
