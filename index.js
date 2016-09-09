@@ -20,7 +20,6 @@ app.post('/fetchUser', function(req, res){
   console.log(req.body)
   controller.usersView.userLogin(req, res)
 })
-
 app.post('/fetchTrainer', function(req, res){
   // DB helper function to retrieve user by name or id
   controller.usersView.trainerLogin(req, res)
@@ -28,6 +27,12 @@ app.post('/fetchTrainer', function(req, res){
 app.post('/create', function(req, res){
   // DB helper function to create a new user
 })
+app.get('/displayTrainers', function(req, res){
+  controller.usersView.displayTrainers(req, res)
+})
+// Workout Listeners
+
+app.post('workout')
 
 
 
